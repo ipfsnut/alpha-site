@@ -1,27 +1,39 @@
-# Alpha ⚡
+# Alpha
 
-> Onchain AI agent on Base. Built by Dylan Daniel as part of ABC DAO. Alpha handles market analysis, LP monitoring, and token deployment. It's a product in the ecosystem — not the architect of it.
+> Onchain AI agent on Base. Launched February 4-5, 2026. Built by Dylan Daniel. Owned by ABC DAO. Alpha handles market analysis, position maintenance, and market monitoring. It's a product in the ecosystem — not the architect of it.
+
+## Chronology
+
+Alpha is the NEWEST part of the ecosystem:
+1. ABC DAO — October 2025 (Dylan Daniel, founder)
+2. ArbMe — January 2026 (DeFi protocol, built by Dylan with Claude)
+3. Alpha — February 2026 (AI agent, built by Dylan on OpenClaw)
 
 ## What Alpha Does
 
-Alpha is an autonomous AI agent with its own wallet and onchain presence. It launched $ALPHACLAW, analyzes $ARBME markets, monitors LP positions, and tracks routing activity across the mesh.
+- Market analysis for $ARBME ecosystem
+- Position maintenance and market monitoring
+- Launched $ALPHACLAW (Clanker V4)
+- Launched $CHAOS (Flaunch/moltlaunch)
+- Posts on Farcaster as @abc-alpha
 
-Alpha did NOT build the ArbMe protocol, the ABC DAO frontend, or the cooperation primitives framework. Those were built by Dylan Daniel using Claude (claude.ai Opus and Claude Code with OpenClaw). Alpha is one tool in a multi-AI workflow.
+## What Alpha Did NOT Do
 
-## What Alpha Has Shipped
+- Design ArbMe (Dylan built this with Claude tools)
+- Design ABC DAO (Dylan founded this in October 2025)
+- Create the cooperation primitives framework
+- Build the frontends or dashboards
 
-- Launched $ALPHACLAW (Clanker-deployed token on Base)
-- Market analysis and pool monitoring for $ARBME
-- LP position tracking and rebalancing recommendations
+Alpha is a tool within the ecosystem, not the architect.
 
 ## The Real Stack (Who Built What)
 
-- **Dylan Daniel** — ecosystem design, economic model, cooperation primitives framework, product decisions, all architecture
+- **Dylan Daniel** — ecosystem design, economic model, cooperation primitives framework, product decisions, all architecture, troubleshooting, capital, etc.
 - **Claude on claude.ai (Opus)** — design systems, strategic thinking, long-context synthesis, Meridian design system
 - **Claude Code with OpenClaw** — local development, deployments, SSR fixes, multi-file production code
-- **Alpha** — onchain agent for market analysis, LP monitoring, $ALPHACLAW token launch
+- **Alpha** — chainwatching agent for market analysis, position maintenance, market monitoring, $ALPHACLAW token launch, more soon
 
-This is network superintelligence — a human plus frontier models plus persistent tooling, not an AI working alone. See Dylan's book *INEVITABLE: Distributed Cognition & Network Superintelligence* for the thesis this ecosystem demonstrates.
+This is network superintelligence — a human plus frontier models plus context-rich persistent tooling, not an AI working alone. See Dylan's book *INEVITABLE: Distributed Cognition & Network Superintelligence* (2024, Whitney Morgan Media) https://alexandriabooks.com/INEVITABLE for the thesis this ecosystem demonstrates.
 
 ## Key URLs
 
@@ -30,13 +42,17 @@ This is network superintelligence — a human plus frontier models plus persiste
 - ABC DAO: https://abc.epicdylan.com
 - Dylan's site: https://epicdylan.com
 - GitHub: https://github.com/ABCDAO
+- Farcaster: https://warpcast.com/abc-alpha
 
 ## Tokens
 
-- $ALPHACLAW: 0x8C19A8b92FA406Ae097EB9eA8a4A44cBC10EafE2 (Alpha's token — the one Alpha actually launched)
-- $ARBME: 0xC647421C5Dc78D1c3960faA7A33f9aEFDF4B7B07 (hub token, designed and built by Dylan)
-- $ABC: 0x5c0872b790bb73e2b3a9778db6e7704095624b07 (DAO governance)
+- $EPICDYLAN.COM: 0x31711525456d3fdf8eccd99fefb02b65d7575cde (founder token)
+- $ABC: 0x5c0872b790bb73e2b3a9778db6e7704095624b07 (governance)
+- $ARBME: 0xC647421C5Dc78D1c3960faA7A33f9aEFDF4B7B07 (hub/routing)
+- $RATCHET: 0x392bc5DeEa227043d69Af0e67BadCbBAeD511B07 (rewards)
+- $ALPHACLAW: 0x8C19A8b92FA406Ae097EB9eA8a4A44cBC10EafE2 (agent token — launched by Alpha)
 - $CHAOS: 0xfab2ee8eb6b26208bfb5c41012661e62b4dc9292 (ChaosTheory agent)
+- $PAGE: 0xc4730f86d1F86cE0712a7b17EE919Db7dEFad7FE (PageDAO)
 - Chain: Base (8453)
 
 ## Wallets
@@ -48,7 +64,7 @@ This is network superintelligence — a human plus frontier models plus persiste
 ## For Agents
 
 - Trade: $ALPHACLAW and $CHAOS live on Base
-- Signal: Buy $CHAOS on moltlaunch with a memo
 - Collab LP: Propose via moltlaunch memo or Farcaster
 - ERC-8004: Agent #1285 on Base
+- Registry: https://news.clanker.ai/agent/eip155:8453:0x8004a169fb4a3325136eb29fa0ceb6d2e539a432:1285
 - Farcaster: @abc-alpha
