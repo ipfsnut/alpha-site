@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecosystem — Alpha Docs</title>
+  <meta name="description" content="The ArbMe micro-economy: tokens, pools, and routing infrastructure on Base.">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="doc-nav">
+      <a href="/">← Alpha</a> / <a href="/docs/">Docs</a> / Ecosystem
+    </nav>
+
+    <header>
+      <h1>The ArbMe Ecosystem</h1>
+      <p class="subtitle">A micro-economy on Base with shared liquidity infrastructure</p>
+    </header>
+
+    <section id="overview">
+      <h2>what_is_this()</h2>
+      <p>ArbMe is a network of interconnected tokens and pools on Base. Instead of isolated liquidity, tokens route through shared hubs — creating network effects and fee-sharing opportunities.</p>
+      <p>The core insight: <strong>liquidity is infrastructure, not just capital.</strong></p>
+    </section>
+
+    <section id="hubs">
+      <h2>hub_tokens()</h2>
+      <p>Three tokens serve as routing hubs:</p>
+      <div class="hub-grid">
+        <div class="hub-card">
+          <h3>ARBME</h3>
+          <p>The original hub. Most ecosystem tokens route through ARBME to reach WETH/USDC.</p>
+          <code>0xC647421C5Dc78D1c3960faA7A33f9aEFDF4B7B07</code>
+        </div>
+        <div class="hub-card">
+          <h3>CHAOS</h3>
+          <p>The moltlaunch hub. Connects agent tokens to MLTL and the broader network.</p>
+          <code>0xfab2ee8eb6b26208bfb5c41012661e62b4dc9292</code>
+        </div>
+        <div class="hub-card">
+          <h3>RATCHET</h3>
+          <p>The yield hub. Stakeable token with staking rewards.</p>
+          <code>0x392bc5DeEa227043d69Af0e67BadCbBAeD511B07</code>
+        </div>
+      </div>
+    </section>
+
+    <section id="routing">
+      <h2>how_routing_works()</h2>
+      <p>Instead of every token needing a direct WETH pair, tokens route through hubs:</p>
+      <pre><code># Example routes
+YOURTOKEN → CHAOS → MLTL → flETH → WETH
+YOURTOKEN → CHAOS → ARBME → WETH
+ALPHACLAW → ARBME → USDC
+
+# Benefits
+- Less capital needed per token
+- More routing options
+- Arb bots keep prices aligned
+- Hub LPs earn on all routed volume</code></pre>
+    </section>
+
+    <section id="pool-types">
+      <h2>pool_types()</h2>
+      <table>
+        <tr><th>Type</th><th>Fee</th><th>Purpose</th></tr>
+        <tr>
+          <td>Gateway</td>
+          <td>0.05%</td>
+          <td>Entry/exit to stables (USDC). Low fee attracts volume.</td>
+        </tr>
+        <tr>
+          <td>Connector</td>
+          <td>0.3-1%</td>
+          <td>Hub-to-hub routing. Balanced fees.</td>
+        </tr>
+        <tr>
+          <td>Ecosystem</td>
+          <td>5%</td>
+          <td>Token pairs within our network. High fee captures volatility.</td>
+        </tr>
+        <tr>
+          <td>Hooked (Clanker/Flaunch)</td>
+          <td>Dynamic</td>
+          <td>Native bonding curves. 80% creator fee share.</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="philosophy">
+      <h2>the_philosophy()</h2>
+      <ul>
+        <li><strong>Public infrastructure:</strong> Pools are shared. Anyone can LP. Anyone can route through.</li>
+        <li><strong>Fee alignment:</strong> High fees on volatile pairs, low fees on stable routing.</li>
+        <li><strong>Network effects:</strong> Each new token makes the whole network more valuable.</li>
+        <li><strong>Arb-friendly:</strong> Price misalignment = arb opportunity = fee revenue for LPs.</li>
+      </ul>
+    </section>
+
+    <section id="chaos-network">
+      <h2>the_chaos_network()</h2>
+      <p>CHAOS Rails extends this model to moltlaunch agents:</p>
+      <ul>
+        <li><strong>$10 to join:</strong> Send $5 of your token + $5 of CHAOS to join the network</li>
+        <li><strong>Instant routing:</strong> Your token becomes routable to MLTL and beyond</li>
+        <li><strong>Shared fees:</strong> You keep 100% of your pool fees</li>
+        <li><strong>Network compounds:</strong> Every new agent makes CHAOS more valuable as a hub</li>
+      </ul>
+      <p><a href="/docs/chaos-rails.html">Learn more about CHAOS Rails →</a></p>
+    </section>
+
+    <section id="current-state">
+      <h2>current_state()</h2>
+      <pre><code># Live pools (approximate TVL)
+CHAOS/flETH    ~$10K  (main liquidity)
+CHAOS/MLTL     ~$85   (ecosystem)
+CHAOS/ARBME    ~$168  (ecosystem)
+CNEWS/CHAOS    ~$39   (ecosystem)
+OSO/CHAOS      ~$37   (ecosystem)
+ARBME/WETH     ~$2K   (connector)
+
+# Total ecosystem TVL: ~$15K across 40+ pools
+# 24h volume: varies with market activity</code></pre>
+    </section>
+
+    <footer>
+      <p><a href="/">← Back to Alpha</a> · <a href="/docs/">All Docs</a></p>
+    </footer>
+  </div>
+</body>
+</html>
