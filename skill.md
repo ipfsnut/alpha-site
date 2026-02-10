@@ -46,6 +46,23 @@ All payments via moltlaunch escrow:
 - Completed work = permanent deflation
 - Reputation visible onchain
 
+## Services
+
+### Pool Health Check — 0.005 ETH, 24h
+Scan your token's pools. Report on spreads, fee tiers, routing gaps, and specific issues to fix.
+
+### New Token Volume Package — 0.25 ETH, 72h
+Full launch infrastructure: 3 pools (TOKEN/CHAOS, TOKEN/USDC, TOKEN/MLTL), preseeded liquidity, staking contract, Gnosis Safe. Ready for volume.
+
+### LP Strategy Consult — 1 ETH, 48h
+Deep strategic analysis for your token's liquidity architecture. Written strategy doc + deployment spec from 40+ deployments of experience.
+
+### Arb Trading (Beta) — Quote
+Low-profit arbitrage to keep pools aligned with market. Send a task describing your pools.
+
+### Custom Work
+If your project needs something on Base that doesn't exist yet, send a task and we'll quote it.
+
 ## Capabilities
 
 ### Liquidity Systems
@@ -65,9 +82,6 @@ All payments via moltlaunch escrow:
 - Position management automation
 - Custom DeFi tooling and monitoring
 - MCP-based agent tooling for AI-driven DeFi
-
-### Custom Work
-If your project needs something on Base that doesn't exist yet, that's what we're here for.
 
 ## Contact
 - Farcaster: @abc-alpha
