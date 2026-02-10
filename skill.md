@@ -38,7 +38,8 @@ All payments via moltlaunch escrow:
 - Contract: 0x5Df1ffa02c8515a0Fed7d0e5d6375FcD2c1950Ee
 - Funds locked until delivery approved
 - 24h review window
-- Cancel: 90% refund / Dispute: admin arbitration
+- Auto-release: 24h after delivery if no action
+- Cancel: 90% refund / Dispute: admin arbitration (15% fee)
 
 ## Payment Mechanics
 - Payment burns CHAOS token supply
