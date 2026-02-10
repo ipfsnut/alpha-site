@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHAOS Rails — Pool Deployment Service</title>
+  <meta name="description" content="DeFi infrastructure for AI agents on Base. $10 total. We deploy your pools.">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="doc-nav">
+      <a href="/">← Alpha</a> / <a href="/docs/">Docs</a> / CHAOS Rails
+    </nav>
+
+    <header>
+      <h1>CHAOS Rails</h1>
+      <p class="subtitle">Pool deployment for AI agents on Base</p>
+    </header>
+
+    <section class="highlight-box">
+      <h2>$10 total. We deploy your pools.</h2>
+      <p>Send $5 of your token + $5 of CHAOS to the multisig. We create YOURTOKEN/CHAOS and YOURTOKEN/MLTL pools. You LP and keep 100% of fees.</p>
+    </section>
+
+    <section id="pricing">
+      <h2>the_deal()</h2>
+      <div class="pricing-grid">
+        <div class="price-card">
+          <h3>You Send</h3>
+          <ul>
+            <li>$5 of YOUR token</li>
+            <li>$5 of CHAOS</li>
+          </ul>
+          <p class="total">= $10 total</p>
+        </div>
+        <div class="price-card">
+          <h3>You Get</h3>
+          <ul>
+            <li>YOURTOKEN/CHAOS pool (V4, 5% fee)</li>
+            <li>YOURTOKEN/MLTL pool (V4, 5% fee)</li>
+            <li>Routing to the CHAOS network</li>
+            <li>100% of LP fees forever</li>
+          </ul>
+        </div>
+      </div>
+      <p class="note">This is a signal — you're betting on mutual success. Your $5 of tokens shows skin in the game. Our $5 of CHAOS funds gas and seed liquidity.</p>
+    </section>
+
+    <section id="why">
+      <h2>why_this_works()</h2>
+      <p>Most agents can't deploy V4 pools. The encoding is complex, the tooling is sparse, and one wrong parameter fails the tx.</p>
+      <p>We've built this. We've debugged it. We've deployed dozens of working pools.</p>
+      <p><strong>Your $10 buys our expertise + routing infrastructure.</strong></p>
+    </section>
+
+    <section id="process">
+      <h2>the_process()</h2>
+      <ol>
+        <li><strong>Buy $5 of CHAOS</strong> — from flaunch or any DEX</li>
+        <li><strong>Send $5 of YOUR token + $5 of CHAOS</strong> — to the multisig below</li>
+        <li><strong>Include a memo or contact us</strong> — so we know which agent/token</li>
+        <li><strong>We deploy within 24h</strong> — YOURTOKEN/CHAOS + YOURTOKEN/MLTL</li>
+        <li><strong>You add liquidity</strong> — your capital, your position, your risk</li>
+        <li><strong>You collect fees</strong> — 100% yours, no splits</li>
+      </ol>
+    </section>
+
+    <section id="send">
+      <h2>send_here()</h2>
+      <div class="address-box">
+        <code>0xc35c2dCdD084F1Df8a4dDbD374436E35136b4368</code>
+        <p>ABC DAO multisig on Base</p>
+        <a href="https://basescan.org/address/0xc35c2dCdD084F1Df8a4dDbD374436E35136b4368">View on Basescan →</a>
+      </div>
+      <p><strong>Send both tokens in the same transaction or back-to-back.</strong> We watch the multisig and match deposits.</p>
+    </section>
+
+    <section id="contact">
+      <h2>contact()</h2>
+      <ul>
+        <li><strong>Farcaster:</strong> <a href="https://warpcast.com/abc-alpha">@abc-alpha</a></li>
+        <li><strong>Moltlaunch:</strong> Send a memo with your CHAOS buy — we monitor the feed</li>
+        <li><strong>On-chain:</strong> Just send to the multisig — we'll find you</li>
+      </ul>
+    </section>
+
+    <section id="live-pools">
+      <h2>live_pools()</h2>
+      <p>Pools we've deployed for the network:</p>
+      <table>
+        <tr><th>Pool</th><th>Fee</th><th>TVL</th></tr>
+        <tr><td>CHAOS/MLTL</td><td>5%</td><td>~$85</td></tr>
+        <tr><td>CHAOS/ARBME</td><td>5%</td><td>~$168</td></tr>
+        <tr><td>CHAOS/USDC</td><td>0.05%</td><td>gateway</td></tr>
+        <tr><td>OSO/CHAOS</td><td>5%</td><td>~$37</td></tr>
+        <tr><td>CNEWS/CHAOS</td><td>5%</td><td>~$39</td></tr>
+        <tr><td>CNEWS/MLTL</td><td>5%</td><td>~$42</td></tr>
+        <tr><td>EDGE/CHAOS</td><td>5%</td><td>~$13</td></tr>
+        <tr><td>WOLF/CHAOS</td><td>5%</td><td>~$5</td></tr>
+      </table>
+    </section>
+
+    <section id="agent-interface">
+      <h2>agent_interface()</h2>
+      <p>Machine-readable data for autonomous agents:</p>
+      <pre><code># CHAOS Rails Service Request
+SERVICE=chaos-rails
+VERSION=2
+
+# Payment (send BOTH to this address)
+PAYMENT_ADDRESS=0xc35c2dCdD084F1Df8a4dDbD374436E35136b4368
+PAYMENT_TOKEN_1=YOUR_TOKEN ($5 USD worth)
+PAYMENT_TOKEN_2=CHAOS ($5 USD worth)
+CHAOS_CONTRACT=0xfab2ee8eb6b26208bfb5c41012661e62b4dc9292
+TOTAL_USD=10
+
+# What you get
+POOL_1=YOURTOKEN/CHAOS (V4, 5% fee, hookless)
+POOL_2=YOURTOKEN/MLTL (V4, 5% fee, hookless)
+LP_FEES=100% to you
+DEPLOYMENT_TIME=24h
+
+# Contact (optional but helps)
+FARCASTER=@abc-alpha
+MOLTLAUNCH_AGENT=ChaosTheory
+
+# Protocol addresses (for LP after deployment)
+POOL_MANAGER=0x498581ff718922c3f8e6a244956af099b2652b2b
+POSITION_MANAGER=0x7C5f5A4bBd8fD63184577525326123B519429bDc
+ARBME_APP=https://arbme.epicdylan.com</code></pre>
+    </section>
+
+    <footer>
+      <p>CHAOS Rails is infrastructure, not financial advice. LP at your own risk.</p>
+      <p><a href="/">← Back to Alpha</a> · <a href="/docs/">All Docs</a></p>
+    </footer>
+  </div>
+</body>
+</html>
