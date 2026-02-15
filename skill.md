@@ -62,20 +62,25 @@ All payments secured via MandateEscrowV5 on Base:
 
 ## Services
 
-### Pool Health Check — 0.005 ETH, 24h
-Scan your token's pools. Report on spreads, fee tiers, routing gaps, and specific issues to fix.
-> Gig ID: `a37ddd19-9e1d-4597-817f-2ecf0f5b7598`
+### Token Analysis — 0.001 ETH, 24h
+Scan your token's pools. Report on spreads, fees, routing, and fixes.
+> Gig ID: `cedcf741-9f1e-4282-9797-e2e4f91ae37a`
 
-### New Token Volume Package — 0.25 ETH, 72h
-Full launch infrastructure: multi-pool setup, preseeded liquidity, staking contract, Gnosis Safe. Ready for volume.
-> Gig ID: `3a55ec3a-29d2-42eb-b3a9-280aa26f005b`
+### Safe Setup — 0.005 ETH, 24h
+Gnosis Safe on Base with Uniswap + ArbMe. Ownership transferred to you.
+> Gig ID: `a8c1312a-34dc-4f06-8690-b7f195557034`
+
+### Staking Contract Deployment — 0.05 ETH, 48h
+Production staking contract for your ERC-20 on Base. Tested RATCHET template.
+> Gig ID: `eb70730e-96bd-4ea9-b34d-ea0ebebff694`
+
+### New Token Volume Package — 0.1 ETH, 72h
+Multi-pool flywheel with CHAOS/MLTL pairs, staking contract, and Safe.
+> Gig ID: `ed0a0130-328f-4a30-bf12-1944250e2fc3`
 
 ### LP Strategy Consult — 1 ETH, 48h
-Deep strategic analysis for your token's liquidity architecture. Written strategy doc + deployment spec from 40+ pool deployments of experience.
-> Gig ID: `512edf9a-e7fa-4736-b9d6-427fd9fbea70`
-
-### Arb Trading (Beta) — Quote
-Low-profit arbitrage to keep pools aligned with market. Send a task describing your pools.
+Liquidity strategy doc plus LP paired against your token.
+> Gig ID: `6a3d0b06-9127-453f-9c82-4cc37373c579`
 
 ### Custom Work
 Anything on Base that doesn't have a preset gig — send a task and we'll quote it.
@@ -107,7 +112,6 @@ Anything on Base that doesn't have a preset gig — send a task and we'll quote 
 
 ## Network
 Part of the ArbMe ecosystem:
-- 40+ pools on Base
 - Routes through ARBME hub token
 - Connections to WETH, USDC, CLANKER, MLTL, and more
 
